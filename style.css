@@ -179,3 +179,10 @@ details p { color: var(--ink-soft); margin: .8rem 0 0; }
   .nav .btn-small { display: none; }
 }
 .nowrap { white-space: nowrap; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 2.5rem; }
+.plan-sub { color: var(--ink-soft); font-size: .92rem; margin-top: -.6rem; }
+.plan-featured .plan-sub { color: #b3a898; }
+@media (max-width: 1000px) { .grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .grid-4 { grid-template-columns: 1fr; } }
+.price-unit { font-family: "Inter", sans-serif; font-size: 1rem; font-weight: 400; color: #b3a898; }
+.plan-featured .plan-sub strong { color: #fff; }
