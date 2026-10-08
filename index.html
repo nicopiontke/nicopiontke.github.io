@@ -38,22 +38,13 @@
         <h1>Aktien analysieren <span class="nowrap">wie ein</span> <em>Portfoliomanager</em>.</h1>
         <p class="lead">Ich zeige dir Schritt für Schritt, wie ich Unternehmen bewerte – von der Bilanz bis zum Kursziel. Ehrlich, nachvollziehbar und ohne Hype.</p>
 
-        <!-- ============================================================
-             NEWSLETTER-FORMULAR
-             Ersetze action="" durch die Formular-URL deines Newsletter-Tools
-             (Brevo, MailerLite, Beehiiv, Steady …). Das Tool übernimmt
-             Double-Opt-in und Speicherung der Adressen.
-             ============================================================ -->
-        <form class="signup" action="" method="post" data-signup>
+        <!-- NEWSLETTER-FORMULAR: leitet mit vorausgefüllter E-Mail zur Steady-Anmeldung
+             (Insight2Investing). Bestätigung + Double-Opt-in erfolgen bei Steady. -->
+        <form class="signup" action="https://steady.page/de/insight2investing/newsletter/sign_up" method="get">
           <label class="sr-only" for="email">E-Mail-Adresse</label>
           <input id="email" type="email" name="email" placeholder="deine@email.de" required autocomplete="email">
-          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button type="submit" class="btn">Kostenlos abonnieren</button>
-          <label class="consent">
-            <input type="checkbox" required>
-            <span>Ich möchte den Newsletter erhalten und habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen. Abmeldung jederzeit möglich.</span>
-          </label>
-          <p class="form-msg" role="status" hidden></p>
+          <p class="consent">Im nächsten Schritt bestätigst du die Anmeldung bei unserem Newsletter-Dienst Steady. Abmeldung jederzeit möglich. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
         </form>
         <p class="micro">Jeden Montag · Kein Spam · Jederzeit kündbar</p>
       </div>
@@ -246,17 +237,6 @@
 
 <script>
   document.querySelector('[data-year]').textContent = new Date().getFullYear();
-  // Solange keine Formular-URL hinterlegt ist, zeigt das Formular einen Hinweis statt ins Leere zu senden.
-  document.querySelectorAll('[data-signup]').forEach(function (f) {
-    f.addEventListener('submit', function (e) {
-      if (!f.getAttribute('action')) {
-        e.preventDefault();
-        var m = f.querySelector('.form-msg');
-        m.hidden = false;
-        m.textContent = 'Danke! Die Anmeldung wird in Kürze freigeschaltet.';
-      }
-    });
-  });
 </script>
 </body>
 </html>

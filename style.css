@@ -186,3 +186,4 @@ details p { color: var(--ink-soft); margin: .8rem 0 0; }
 @media (max-width: 560px) { .grid-4 { grid-template-columns: 1fr; } }
 .price-unit { font-family: "Inter", sans-serif; font-size: 1rem; font-weight: 400; color: #b3a898; }
 .plan-featured .plan-sub strong { color: #fff; }
+p.consent { display: block; margin: 0; }
