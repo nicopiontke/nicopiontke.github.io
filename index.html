@@ -25,7 +25,11 @@
       <a href="#preise">Angebot</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#anmelden" class="btn btn-small">Kostenlos abonnieren</a>
+    <div class="nav-actions">
+      <!-- Mitglieder-Login: führt zum Login der Steady-Publikation -->
+      <a href="https://steady.page/de/log_in?publication=insight2investing" class="nav-login" target="_blank" rel="noopener">Mitglieder-Login</a>
+      <a href="#anmelden" class="btn btn-small">Kostenlos abonnieren</a>
+    </div>
   </div>
 </header>
 
@@ -38,12 +42,18 @@
         <h1>Aktien analysieren <span class="nowrap">wie ein</span> <em>Portfoliomanager</em>.</h1>
         <p class="lead">Ich zeige dir Schritt für Schritt, wie ich Unternehmen bewerte – von der Bilanz bis zum Kursziel. Ehrlich, nachvollziehbar und ohne Hype.</p>
 
+        <!-- LEAD-MAGNET: PDF liegt unter downloads/ und wird über die Willkommensmail von Steady verschickt -->
+        <div class="gift">
+          <img src="img/checkliste-cover.png" alt="" width="64" height="90" class="gift-cover">
+          <p><strong>Gratis zur Anmeldung:</strong> Der 15-Minuten-Aktien-Check – meine Checkliste mit Bewertungsbogen, mit der ich entscheide, ob eine Aktie den zweiten Blick wert ist.</p>
+        </div>
+
         <!-- NEWSLETTER-FORMULAR: leitet mit vorausgefüllter E-Mail zur Steady-Anmeldung
              (Insight2Investing). Bestätigung + Double-Opt-in erfolgen bei Steady. -->
         <form class="signup" action="https://steady.page/de/insight2investing/newsletter/sign_up" method="get">
           <label class="sr-only" for="email">E-Mail-Adresse</label>
           <input id="email" type="email" name="email" placeholder="deine@email.de" required autocomplete="email">
-          <button type="submit" class="btn">Kostenlos abonnieren</button>
+          <button type="submit" class="btn">Checkliste + Newsletter sichern</button>
           <p class="consent">Im nächsten Schritt bestätigst du die Anmeldung bei unserem Newsletter-Dienst Steady. Abmeldung jederzeit möglich. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
         </form>
         <p class="micro">Jeden Montag · Kein Spam · Jederzeit kündbar</p>
@@ -210,6 +220,14 @@
         <p>Am selben Tag – immer erst nach Ausführung im Wikifolio, mit Zeitstempel und Begründung. So bleibt jeder Trade transparent und überprüfbar.</p>
       </details>
       <details>
+        <summary>Wie bekomme ich die Checkliste?</summary>
+        <p>Direkt nach der Bestätigung deiner Anmeldung – der Download-Link steht in der Willkommens-E-Mail.</p>
+      </details>
+      <details>
+        <summary>Wo finde ich als Mitglied die Premium-Inhalte?</summary>
+        <p>Alle Inhalte für Mitglieder liegen in deinem Bereich bei Steady. Oben rechts auf „Mitglieder-Login“ klicken und mit deiner E-Mail-Adresse anmelden.</p>
+      </details>
+      <details>
         <summary>Kann ich mich wieder abmelden?</summary>
         <p>Jederzeit mit einem Klick – der Abmeldelink steht in jeder E-Mail.</p>
       </details>
@@ -220,6 +238,7 @@
   <section class="cta">
     <div class="wrap narrow center">
       <h2>Die nächste Analyse kommt direkt in dein Postfach.</h2>
+      <p class="cta-sub">Plus gratis: der 15-Minuten-Aktien-Check als PDF.</p>
       <a href="#anmelden" class="btn btn-light">Jetzt kostenlos abonnieren</a>
     </div>
   </section>

@@ -187,3 +187,16 @@ details p { color: var(--ink-soft); margin: .8rem 0 0; }
 .price-unit { font-family: "Inter", sans-serif; font-size: 1rem; font-weight: 400; color: #b3a898; }
 .plan-featured .plan-sub strong { color: #fff; }
 p.consent { display: block; margin: 0; }
+
+/* Mitglieder-Login */
+.nav-actions { display: flex; align-items: center; gap: 1.1rem; }
+.nav-login { color: var(--ink-soft); text-decoration: none; font-size: .9rem; font-weight: 500; }
+.nav-login:hover { color: var(--ink); }
+
+/* Lead-Magnet */
+.gift { display: flex; align-items: center; gap: 1rem; margin-top: 1.6rem; max-width: 520px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
+.gift p { margin: 0; font-size: .92rem; color: var(--ink-soft); line-height: 1.45; }
+.gift strong { color: var(--ink); }
+.gift-cover { width: 56px; height: auto; border-radius: 4px; box-shadow: 0 6px 14px -6px rgba(20,18,16,.5); flex-shrink: 0; }
+.gift + .signup { margin-top: 1rem; }
+.cta-sub { color: #cfc6b8; margin: -.4rem 0 1.6rem; }
