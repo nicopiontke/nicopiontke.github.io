@@ -200,3 +200,7 @@ p.consent { display: block; margin: 0; }
 .gift-cover { width: 56px; height: auto; border-radius: 4px; box-shadow: 0 6px 14px -6px rgba(20,18,16,.5); flex-shrink: 0; }
 .gift + .signup { margin-top: 1rem; }
 .cta-sub { color: #cfc6b8; margin: -.4rem 0 1.6rem; }
+
+/* Leseprobe-Link in der Hero-Karte */
+.card-link { display: inline-block; margin-top: 1.4rem; color: var(--lime); font-weight: 600; text-decoration: none; }
+.card-link:hover { text-decoration: underline; }
