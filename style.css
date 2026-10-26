@@ -204,3 +204,7 @@ p.consent { display: block; margin: 0; }
 /* Leseprobe-Link in der Hero-Karte */
 .card-link { display: inline-block; margin-top: 1.4rem; color: var(--lime); font-weight: 600; text-decoration: none; }
 .card-link:hover { text-decoration: underline; }
+
+/* Anmeldeformular im Abschluss-Kasten der Analysen */
+.end-cta .signup { margin-top: 1.2rem; }
+.end-cta .consent a { color: #fff; }
